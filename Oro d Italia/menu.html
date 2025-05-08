@@ -1,0 +1,1054 @@
+<!DOCTYPE html>
+<html lang="nl">
+    <head>
+        <meta property="og:type" content="restaurant.restaurant">
+        <meta property="og:locale" content="nl_NL">
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:image:alt"
+            content="Oro d'Italia Restaurant Rotterdam">
+        <meta name="description"
+            content="Authentiek Italiaans restaurant in hartje Rotterdam. Geniet van verse pasta's, pizza's, grillgerechten en een uitgebreide wijnkaart. Reserveer nu.">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Oro d Italia - Menu</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Allura&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+            rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <!-- Overlay pagecovering reservation part -->
+        <div class="overlay-container">
+            <div class="inner-container">
+                <img onclick="closeReserveren()" class="close" src="img/close.svg" alt="">
+                <h1>Reservation</h1>
+                <form class="res-form">
+                <label for=""><strong>Number of people</strong> - Optional</label>
+                <input placeholder="Number of people" type="number">
+                <label for=""><strong>Date</strong> - required</label>
+                <input type="date">
+                <label for=""><strong>Number of people</strong> - required</label>
+                <input type="time">
+                <button class='res-btn'>FIND A TABLE</button>
+            </form>
+            </div>
+        </div>
+        <!-- mobile nav -->
+        <div class="nav-mob-overlay-container">
+                <div class="mob-nav-container">
+                    <a href="/">Home</a>
+                    <a href="menu.html">Menu</a>
+                    <a href="javascript:void(0)" onclick="openReserveren()">Reserveren</a>
+                </div>
+        </div>
+        <!-- button fixeed on the bottom of the page  -->
+        <div class="fix-container-menu">
+            <a onclick="openReserveren()" class="fix-menu">
+                <img src="/img/open-book.svg" alt>
+                <p>Reservering</p>
+            </a>
+        </div>
+
+        <!-- header with bg photo and nav -->
+        <header>
+            <!-- nav desktop -->
+            <nav>
+                <ul class="ul">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="javascript:void(0)" onclick="openReserveren()">Reserveren</a></li>
+                    <li><a href="tel:0104263666">Bel (010) 4263666</a></li>
+                </ul>
+                <img onclick="showMobNav()" class="hamburger-icon" src="img/menu (2).svg" alt="hamburger menu button">
+            </nav>
+            <!-- <h1 class="home1">Oro d Italia</h1>
+            <h3 class="home2">RESTAURANT</h3> -->
+        </header>
+        <!-- part below top photo with the Name MENU big with the opening menu link with the section links -->
+        <div class="menu1">
+            <p>Oro d Italia</p>
+            <p>RESTAURANT</p>
+            <p>Menu</p>
+            <img
+                src="/img/—Pngtree—decorative line separator black lines_8369323.png"
+                alt>
+            <div class="nav-links">
+                <span><a href="/">Home</a></span>
+                <span><a href="javascript:void(0)" onclick="openReserveren()">Reserveren</a></span>
+            </div>
+        </div>
+        <!-- the menu sections part of the page-->
+        <div class="menu-section">
+            <!-- section appetizers and antipasta -->
+            <h2 class="section-title">Appetizers | <span> Antipasti</span></h2>
+            <div class="ywline"></div>
+            <!-- section appetizers -->
+            <div class="menu-column">
+                <div class="menu-item">
+                    <div class="item-info">
+                        <div class="item-header">
+                            <span class="item-name">Il Pastaiolo
+                                Meatballs</span>
+                            <div class="dotted-line"></div>
+                        </div>
+                        <div class="item-description">Homemade Angus beef and
+                            veal meatballs, with marinara sauce and basil.</div>
+                    </div>
+                    <div class="item-price">18</div>
+                </div>
+                <div class="menu-item">
+                    <div class="item-info">
+                        <div class="item-header">
+                            <span class="item-name">Bruschetta</span>
+                            <div class="dotted-line"></div>
+                        </div>
+                        <div class="item-description">Toasted bread, tomato,
+                            basil and garlic.</div>
+                        <div class="add-info">
+                            <p><strong>Add:</strong> Prosciutto di Parma aged 24
+                                months <strong> 9</strong></p>
+                            <p><strong>Add:</strong> Fresh
+                                burrata<strong>12</strong></p>
+                        </div>
+                    </div>
+                    <div class="item-price">15</div>
+                </div>
+                <div class="menu-item">
+                    <div class="item-info">
+                        <div class="item-header">
+                            <span class="item-name">Grilled Octopus</span>
+                            <div class="dotted-line"></div>
+                        </div>
+                        <div class="item-description">Grilled octopus, roasted
+                            potatoes, cherry tomatoes and black olive
+                            mayonnaise.</div>
+
+                    </div>
+                    <div class="item-price">26</div>
+                </div>
+                <div class="menu-item">
+                    <div class="item-info">
+                        <div class="item-header">
+                            <span class="item-name">* Salmon Tartare</span>
+                            <div class="dotted-line"></div>
+                        </div>
+                        <div class="item-description">Fresh burrata with
+                            arugula, cherry tomatoes and black olive
+                            crumbs.</div>
+                        <div class="add-info">
+                            <p><strong>Add:</strong> Prosciutto di Parma aged 24
+                                months <strong> 9</strong></p>
+                        </div>
+                    </div>
+                    <div class="item-price">22</div>
+                </div>
+                <div class="menu-item">
+                    <div class="item-info">
+                        <div class="item-header">
+                            <span class="item-name">Fried Calamari &
+                                Shrimp</span>
+                            <div class="dotted-line"></div>
+                        </div>
+                        <div class="cor-tex">
+                            <p>(Fritura Mista)</p>
+                        </div>
+                        <div class="item-description">Crispy calamari and shrimp
+                            served with crispy zucchini and homemade
+                            mayonnaise.</div>
+                    </div>
+                    <div class="item-price">15</div>
+                </div>
+            </div>
+            <!-- section antipasta -->
+            <div class="menu-column">
+
+                <div class="menu-item">
+                    <div class="item-info">
+                        <div class="item-header">
+                            <span class="item-name">Mussels & Clams
+                                Sauteed</span>
+                            <div class="dotted-line"></div>
+                        </div>
+                        <div class="cor-tex">
+                            <p>(Zuppa Di Cozze E Vongole)</p>
+                        </div>
+                        <div class="item-description">Sautéed mussels and clams
+                            with cherry tomatoes, parsley and Italian
+                            bread.</div>
+
+                    </div>
+                    <div class="item-price">22</div>
+                </div>
+                <div class="menu-item">
+                    <div class="item-info">
+                        <div class="item-header">
+                            <span class="item-name">* Prime Beef
+                                Carpaccio</span>
+                            <div class="dotted-line"></div>
+                        </div>
+                        <div class="cor-tex">
+                            <p>(Zuppa Di Cozze E Vongole)</p>
+                        </div>
+                        <div class="item-description">Thin slices of raw beef,
+                            tomato sauce, capers, crispy Parmigiano Reggiano and
+                            truffle oil.</div>
+                        <div class="add-info">
+                            <p><strong>Add:</strong> Fresh true <strong>
+                                    14</strong></p>
+                        </div>
+                    </div>
+                    <div class="item-price">24</div>
+                </div>
+                <div class="menu-item">
+                    <div class="item-info">
+                        <div class="item-header">
+                            <span class="item-name"> Focaccia Burrata E
+                                Prosciutto</span>
+                            <div class="dotted-line"></div>
+                        </div>
+                        <div class="item-description">Focaccia, fresh burrata,
+                            prosciutto di Parma aged 24 months and
+                            rosemary.</div>
+
+                    </div>
+                    <div class="item-price">26</div>
+                </div>
+                <div class="menu-item">
+                    <div class="item-info">
+                        <div class="item-header">
+                            <span class="item-name">Soup of the Day</span>
+                            <div class="dotted-line"></div>
+                        </div>
+                        <div class="item-description">Ask your server.</div>
+                    </div>
+                    <div class="item-price">18</div>
+                </div>
+            </div>
+            <!-- section to share -->
+            <h3  class="h3">To Share</h3>
+            <div id="share" class="ywline"></div>
+            <div class="menu-column">
+                <div class="menu-item">
+                    <div class="item-info">
+                        <div class="item-header">
+                            <span class="item-name">Cured Meat and Cheese
+                                Board</span>
+                            <div class="dotted-line"></div>
+                        </div>
+                        <div class="item-description">Prosciutto di Parma aged
+                            24 months, mortadella, coppa,
+                            Parmigiano Reggiano, Provolone del Monaco, Pecorino
+                            Romano and olives.</div>
+                        <div class="add-info">
+                            <p><strong>Add:</strong> resh burrata <strong>
+                                    12</strong></p>
+                        </div>
+                    </div>
+                    <div class="item-price">34</div>
+                </div>
+            </div>
+            <!-- section pasta leftside-->
+            <div class="ywline" style="margin-top: -20px;"></div>
+            <h2 class="section-title" style="margin-top: 0px;">Pasta</h2>
+            <div class="ywline"></div>
+            <div class="menu-column">
+                <div class="menu-item">
+                    <div class="item-info">
+                        <div class="item-header">
+                            <span class="item-name">Gnocchi Cacio e Pepe with
+                                Fresh Truffle</span>
+                            <div class="dotted-line"></div>
+                        </div>
+                        <div class="item-description">Handmade gnocchi, with
+                            cheese and black pepper sauce, seasonal Italy fresh
+                            truffle.</div>
+                    </div>
+                    <div class="item-price">32</div>
+                </div>
+                <div class="menu-item">
+                    <div class="item-info">
+                        <div class="item-header">
+                            <span class="item-name">Gnocchi alla
+                                Sorrentina</span>
+                            <div class="dotted-line"></div>
+                        </div>
+                        <div class="item-description">Homemade gnocchi with San
+                            Marzano tomato sauce, mozzarella di Bufala and
+                            Parmigiano Reggiano.</div>
+                    </div>
+                    <div class="item-price">28</div>
+                </div>
+                <div class="menu-item">
+                    <div class="item-info">
+                        <div class="item-header">
+                            <span class="item-name">Ravioli Lobster
+                            </span>
+                            <div class="dotted-line"></div>
+                        </div>
+                        <div class="cor-tex">
+                            <p>(Ravioli All’Aragosta)</p>
+                        </div>
+                        <div class="item-description">Homemade ravioli, filled
+                            with lobster meat and ricotta cheese, tomato sauce
+                            and cheese fondue.</div>
+                    </div>
+                    <div class="item-price">36</div>
+                </div>
+                <div class="menu-item">
+                    <div class="item-info">
+                        <div class="item-header">
+                            <span class="item-name">Ravioli Ossobuco</span>
+                            <div class="dotted-line"></div>
+                        </div>
+
+                        <div class="item-description">Homemade ravioli lled with
+                            ossobuco meat, demi-glace sauce and cheese
+                            fondue.</div>
+                    </div>
+                    <div class="item-price">29</div>
+                </div>
+                <div class="menu-item">
+                    <div class="item-info">
+                        <div class="item-header">
+                            <span class="item-name">Ravioli Salmon</span>
+                            <div class="dotted-line"></div>
+                        </div>
+                        <div class="item-description">Homemade ravioli filled
+                            with salmon, arugula, ricotta cheese, creamy sauce
+                            and Pecorino Romano.</div>
+                    </div>
+                    <div class="item-price">29</div>
+                </div>
+                <div class="menu-item">
+                    <div class="item-info">
+                        <div class="item-header">
+                            <span class="item-name">Penne Alla Vodka</span>
+                            <div class="dotted-line"></div>
+                        </div>
+                        <div class="item-description">Homemade penne in a creamy
+                            vodka sauce.</div>
+                        <div class="add-info">
+                            <span><strong>Add:</strong> Chicken<strong>
+                                    14</strong></span><span><strong>Add:</strong>
+                                Shrimp <strong> 10</strong></span>
+                        </div>
+                    </div>
+                    <div class="item-price">26</div>
+                </div>
+                <div class="menu-item">
+                    <div class="item-info">
+                        <div class="item-header">
+                            <span class="item-name">Rigatoni Carbonara</span>
+                            <div class="dotted-line"></div>
+                        </div>
+                        <div class="item-description">Roasted guanciale,
+                            Pecorino Romano and black pepper in a creamy egg
+                            yolk sauce.</div>
+                        <div class="add-info">
+                            <p><strong>Add:</strong> Fresh true<strong>
+                                    14</strong></p>
+                        </div>
+                    </div>
+                    <div class="item-price">29</div>
+                </div>
+
+            </div>
+            <!-- section pasta rightside -->
+            <div class="menu-column">
+                <div class="menu-item">
+                    <div class="item-info">
+                        <div class="item-header">
+                            <span class="item-name">Linguine Seafood
+                                Pasta</span>
+                            <div class="dotted-line"></div>
+                        </div>
+                        <div class="item-description">Homemade linguine pasta
+                            with seafood: mussels, clams, squid, shrimp, a touch
+                            of cherry tomato, parsley and organic olive
+                            oil.</div>
+
+                    </div>
+                    <div class="item-price">38</div>
+                </div>
+                <div class="menu-item">
+                    <div class="item-info">
+                        <div class="item-header">
+                            <span class="item-name">Linguine Clams</span>
+                            <div class="dotted-line"></div>
+                        </div>
+                        <div class="cor-tex">
+                            <p>(Linguine Alle Vongole)</p>
+                        </div>
+                        <div class="item-description">Homemade linguine with
+                            clams and a touch of yellow tomato.</div>
+                    </div>
+                    <div class="item-price">32</div>
+                </div>
+                <div class="menu-item">
+                    <div class="item-info">
+                        <div class="item-header">
+                            <span class="item-name">Risotto Mushrooms</span>
+                            <div class="dotted-line"></div>
+                        </div>
+                        <div class="item-description">Italian risotto with wild
+                            mushrooms.</div>
+                        <div class="add-info">
+                            <p><strong>Add:</strong> Fresh truffle<strong>
+                                    14</strong></p>
+                        </div>
+                    </div>
+                    <div class="item-price">29</div>
+                </div>
+                <div class="menu-item">
+                    <div class="item-info">
+                        <div class="item-header">
+                            <span class="item-name">Fettuccine Alfredo</span>
+                            <div class="dotted-line"></div>
+                        </div>
+                        <div class="item-description">Homemade fettuccine with
+                            Alfredo sauce melted in creamy Parmigiano
+                            Reggiano.</div>
+                        <div class="add-info">
+                            <span><strong>Add:</strong> Chicken<strong>
+                                    14</strong></span><span><strong>Add:</strong>
+                                Shrimp<strong> 10</strong></span>
+                        </div>
+                    </div>
+                    <div class="item-price">26</div>
+                </div>
+                <div class="menu-item">
+                    <div class="item-info">
+                        <div class="item-header">
+                            <span class="item-name">Fettuccine Bolognese</span>
+                            <div class="dotted-line"></div>
+                        </div>
+                        <div class="item-description">Homemade fettuccine with
+                            fresh Bolognese sauce nished with Parmigiano
+                            Reggiano.</div>
+                        <div class="add-info">
+                            <p><strong>Add:</strong> Fresh truffle<strong>
+                                    14</strong></p>
+                        </div>
+                    </div>
+                    <div class="item-price">28</div>
+                </div>
+                <div class="menu-item">
+                    <div class="item-info">
+                        <div class="item-header">
+                            <span class="item-name">Maccheroni Ragú</span>
+                            <div class="dotted-line"></div>
+                        </div>
+                        <div class="item-description">Slow cooked Angus beef in
+                            tomato sauce and fresh basil, served with cheese
+                            fondue.</div>
+                        <div class="add-info">
+                            <p><strong>Add:</strong> Fresh truffle<strong>
+                                    14</strong></p>
+                        </div>
+                    </div>
+                    <div class="item-price">32</div>
+                </div>
+                <div class="menu-item">
+                    <div class="item-info">
+                        <div class="item-header">
+                            <span class="item-name">Spaghetti Alla Nerano and
+                                Shrimp</span>
+                            <div class="dotted-line"></div>
+                        </div>
+                        <div class="item-description">Homemade spaghetti,
+                            shrimp, zucchini cream, Parmigiano Reggiano and
+                            Provolone del Monaco on top.</div>
+                    </div>
+                    <div class="item-price">36</div>
+                </div>
+
+            </div>
+            <!-- special box left -->
+            <div class="menu-column">
+                <div class="menu-box1">
+                    <div class="menu-item" style="margin-bottom: 0;">
+                        <div class="item-info">
+                            <div class="item-header">
+                                <span class="item-name">Special Cacio e Pepe
+                                </span>
+                                <div class="dotted-line"></div>
+                            </div>
+                            <div class="cor-tex">
+                                <p>(Table side presentation)</p>
+                            </div>
+                            <div class="item-description">Homemade fettuccine
+                                with Pecorino Romano cheese sauce, finished with
+                                black pepper in a Parmigiano Regiano wheel,
+                                topped with burrata and fresh truffle.</div>
+                        </div>
+                        <div class="item-price">55</div>
+                    </div>
+                </div>
+            </div>
+            <!-- special box right -->
+            <div class="menu-column">
+                <div class="menu-box2">
+                    <div class="menu-item" style="margin: 0;">
+                        <div class="item-info">
+                            <div class="item-header">
+                                <span class="item-name"
+                                    style="color: white;">Linguine
+                                    Lobster</span>
+                                <div class="dotted-line"
+                                    style="border-bottom: 2px dotted #ffffff;"></div>
+                            </div>
+                            <div class="item-description"
+                                style="color: white;">Homemade linguine pasta
+                                with whole Maine lobster, cherry tomatoes,
+                                parsley and organic olive oil.</div>
+                        </div>
+                        <div class="item-price" style="color: white;">60</div>
+                    </div>
+                </div>
+            </div>
+            <!-- meat section -->
+            <div id="line" class="ywline"></div>
+            <div class="menu-column">
+                <h2 class="section-title1">Meat</h2>
+                <div class="ywline1"></div>
+                <div class="menu-item">
+                    <div class="item-info">
+                        <div class="item-header">
+                            <span class="item-name">* 16 Oz. Rib Eye "Cowboy"
+                            </span>
+                            <div class="dotted-line"></div>
+                        </div>
+                        <div class="item-description">Grilled ribeye served with
+                            cherry tomatoes, arugula salad, Parmigiano Reggiano
+                            shaved on top and roasted fingerling potatoes.</div>
+                    </div>
+                    <div class="item-price">64</div>
+                </div>
+                <div class="menu-item">
+                    <div class="item-info">
+                        <div class="item-header">
+                            <span class="item-name">* Lamb Chops</span>
+                            <div class="dotted-line"></div>
+                        </div>
+                        <div class="item-description">Homemade spaghetti,
+                            shrimp, zucchini cream, Parmigiano Reggiano and
+                            Provolone del Monaco on top.</div>
+                    </div>
+                    <div class="item-price">54</div>
+                </div>
+                <div class="menu-item">
+                    <div class="item-info">
+                        <div class="item-header">
+                            <span class="item-name">* 8 Oz. Filet Mignon
+                            </span>
+                            <div class="dotted-line"></div>
+                        </div>
+                        <div class="item-description">Grilled fllet mignon
+                            served with mashed potatoes, grilled asparagus and
+                            demi glace sauce.</div>
+                    </div>
+                    <div class="item-price">52</div>
+                </div>
+                <div class="menu-item">
+                    <div class="item-info">
+                        <div class="item-header">
+                            <span class="item-name">Chicken Parmigiana</span>
+                            <div class="dotted-line"></div>
+                        </div>
+                        <div class="cor-tex">
+                            <p>(Pollo Alla Parmigiana)</p>
+                        </div>
+                        <div class="item-description">Homemade spaghetti,
+                            shrimp, zucchini cream, Parmigiano Reggiano and
+                            Provolone del Monaco on top.</div>
+                    </div>
+                    <div class="item-price">32</div>
+                </div>
+            </div>
+            <!-- fish section -->
+            <div class="menu-column">
+                <h2 class="section-title1">Fish</h2>
+                <div class="ywline1"></div>
+                <div class="menu-item">
+                    <div class="item-info">
+                        <div class="item-header">
+                            <span class="item-name">* Chilean Sea Bass</span>
+                            <div class="dotted-line"></div>
+                        </div>
+                        <div class="item-description">Lemon butter seared fillet
+                            with pistachio, broccoli puree and rainbow baby
+                            carrots.</div>
+                    </div>
+                    <div class="item-price">55</div>
+                </div>
+                <div class="menu-item">
+                    <div class="item-info">
+                        <div class="item-header">
+                            <span class="item-name">* Mediterranean Branzino
+                            </span>
+                            <div class="dotted-line"></div>
+                        </div>
+                        <div class="item-description">Fresh whole sea bass baked
+                            with cherry tomatoes, black olives, capers and baby
+                            zucchini</div>
+                    </div>
+                    <div class="item-price">45</div>
+                </div>
+                <div class="menu-box1">
+                    <div class="menu-item" style="margin-bottom: 0;">
+                        <div class="item-info">
+                            <div class="item-header">
+                                <span class="item-name">* Scottish Salmon
+                                </span>
+                                <div class="dotted-line"></div>
+                            </div>
+                            <div class="cor-tex">
+                                <p>(Salmone Scozzese)</p>
+                            </div>
+                            <div class="item-description">Charcoal grilled
+                                salmon with mashed potatoes, carrot cream and
+                                mixed vegetables</div>
+                        </div>
+                        <div class="item-price">36</div>
+                    </div>
+                </div>
+            </div>
+            <!-- pizza section -->
+            <div class="ywline2" id="line1"   ></div>
+            <h2 class="section-title">Pizzas</h2>
+            <div class="ywline"></div>
+            <div class="menu-column">
+                <div class="menu-item">
+                    <div class="item-info">
+                        <div class="item-header">
+                            <span class="item-name">Margherita Classica</span>
+                            <div class="dotted-line"></div>
+                        </div>
+                        <div class="item-description">San Marzano tomato sauce,
+                            mozzarella and basil.</div>
+                    </div>
+                    <div class="item-price">19</div>
+                </div>
+                <div class="menu-item">
+                    <div class="item-info">
+                        <div class="item-header">
+                            <span class="item-name">Pepperoni
+                            </span>
+                            <div class="dotted-line"></div>
+                        </div>
+                        <div class="item-description">San Marzano tomato sauce,
+                            mozzarella, basil and salami.</div>
+                    </div>
+                    <div class="item-price">22</div>
+                </div>
+                <div class="menu-item">
+                    <div class="item-info">
+                        <div class="item-header">
+                            <span class="item-name">* Prosciutto & Arugula
+                            </span>
+                            <div class="dotted-line"></div>
+                        </div>
+                        <div class="item-description">San Marzano tomato sauce,
+                            mozzarella, prosciutto di Parma aged 24 months and
+                            grana padano.</div>
+                        <div class="add-info">
+                            <p><strong>Add:</strong> Fresh truffle<strong>
+                                    14</strong></p>
+                        </div>
+                    </div>
+                    <div class="item-price">24</div>
+                </div>
+            </div>
+
+            <div class="menu-column">
+                <div class="menu-item">
+                    <div class="item-info">
+                        <div class="item-header">
+                            <span class="item-name">Mortadella Pistacchio</span>
+                            <div class="dotted-line"></div>
+                        </div>
+                        <div class="item-description">Mozzarella, Italian
+                            Mortadella and pistacchio pesto.</div>
+
+                    </div>
+                    <div class="item-price">26</div>
+                </div>
+                <div class="menu-item">
+                    <div class="item-info">
+                        <div class="item-header">
+                            <span class="item-name">* Burrata, Truffle,
+                                Capicollo</span>
+                            <div class="dotted-line"></div>
+                        </div>
+                        <div class="item-description">Fresh burrata, fresh
+                            truffle and capicollo.</div>
+                    </div>
+                    <div class="item-price">32</div>
+                </div>
+                <div class="menu-item">
+                    <div class="item-info">
+                        <div class="item-header">
+                            <span class="item-name">Hawaiian</span>
+                            <div class="dotted-line"></div>
+                        </div>
+                        <div class="item-description">San Marzano tomato sauce,
+                            mozzarella, smoked ham and grilled pineapple.</div>
+
+                    </div>
+                    <div class="item-price">22</div>
+                </div>
+            </div>
+            <!-- section desserts -->
+            <div class="ywline2"></div>
+            <h2 class="section-title">Deserts</h2>
+            <div class="ywline"></div>
+            <div class="menu-column">
+                <div class="menu-item">
+                    <div class="item-info">
+                        <div class="item-header">
+                            <span class="item-name">Tiramisù</span>
+                            <div class="dotted-line"></div>
+                        </div>
+                        <div class="item-description">Imported Italian Savoiardi
+                            biscuits soaked with espresso coffee and covered
+                            with homemade Mascarpone Mousse.</div>
+                    </div>
+                    <div class="item-price">15</div>
+                </div>
+                <div class="menu-item">
+                    <div class="item-info">
+                        <div class="item-header">
+                            <span class="item-name">Cheesecake
+                            </span>
+                            <div class="dotted-line"></div>
+                        </div>
+                        <div class="item-description">Creamy fresh Philadelphia
+                            cheese with fresh fruit on top and wild berries
+                            marmalade.</div>
+                    </div>
+                    <div class="item-price">14</div>
+                </div>
+                <div class="menu-item">
+                    <div class="item-info">
+                        <div class="item-header">
+                            <span class="item-name">Cannoli
+                            </span>
+                            <div class="dotted-line"></div>
+                        </div>
+                        <div class="item-description">Imported Sicilian lightly
+                            sweetened Ricotta cream dipped in a cannoli shell
+                            with a rim covered of dark chocolate and shaved
+                            pistachios.</div>
+                        <div class="add-info">
+                        </div>
+                    </div>
+                    <div class="item-price">12</div>
+                </div>
+            </div>
+
+            <div class="menu-column">
+                <div class="menu-item">
+                    <div class="item-info">
+                        <div class="item-header">
+                            <span class="item-name">Caprese Nutella Chocolate
+                                Cake
+                            </span>
+                            <div class="dotted-line"></div>
+                        </div>
+                        <div class="item-description">Delicious flourless cake
+                            served with Nutella and Vanilla Ice cream.</div>
+
+                    </div>
+                    <div class="item-price">14</div>
+                </div>
+                <div class="menu-item">
+                    <div class="item-info">
+                        <div class="item-header">
+                            <span class="item-name">Panna Cotta</span>
+                            <div class="dotted-line"></div>
+                        </div>
+                        <div class="item-description">Silky smooth
+                            vanilla-infused cream custard, delicately set and
+                            topped with fresh seasonal berries and a raspberry
+                            coulis.</div>
+                    </div>
+                    <div class="item-price">16</div>
+                </div>
+                <div class="menu-item">
+                    <div class="item-info">
+                        <div class="item-header">
+                            <span class="item-name">Gelato Artigianale</span>
+                            <div class="dotted-line"></div>
+                        </div>
+                        <div class="item-description">Handcrafted Italian ice
+                            cream in flavors of pistachio, stracciatella, and
+                            nocciola (hazelnut), served with freshly baked
+                            biscotti..</div>
+
+                    </div>
+                    <div class="item-price">17</div>
+                </div>
+            </div>
+            <div class="ywline2"></div>
+            <!-- section drinks -->
+            <h2 class="section-title">Drinks</h2>
+            <div class="ywline"></div>
+            <!-- section drinks (non-alcoholic) -->
+            <div class="menu-column">
+                <div class="menu-item">
+                    <div class="item-info">
+                        <div class="item-header">
+                            <span class="item-name">San Pellegrino (Sparkling)</span>
+                            <div class="dotted-line"></div>
+                        </div>
+                    </div>
+                    <div class="item-price">5</div>
+                </div>
+                <div class="menu-item">
+                    <div class="item-info">
+                        <div class="item-header">
+                            <span class="item-name">Acqua Panna (Still)</span>
+                            <div class="dotted-line"></div>
+                        </div>
+                    </div>
+                    <div class="item-price">5</div>
+                </div>
+                <div class="menu-item">
+                    <div class="item-info">
+                        <div class="item-header">
+                            <span class="item-name">Fanta Bottled</span>
+                            <div class="dotted-line"></div>
+                        </div>
+                    </div>
+                    <div class="item-price">4</div>
+                </div>
+                <div class="menu-item">
+                    <div class="item-info">
+                        <div class="item-header">
+                            <span class="item-name">Spite Bott</span>
+                            <div class="dotted-line"></div>
+                        </div>
+                    </div>
+                    <div class="item-price">4</div>
+                </div>
+                <div class="menu-item">
+                    <div class="item-info">
+                        <div class="item-header">
+                            <span class="item-name">Red Bull</span>
+                            <div class="dotted-line"></div>
+                        </div>
+                    </div>
+                    <div class="item-price">4</div>
+                </div>
+                <div class="menu-item">
+                    <div class="item-info">
+                        <div class="item-header">
+                            <span class="item-name">Bottled Coca-Cola</span>
+                            <div class="dotted-line"></div>
+                        </div>
+                    </div>
+                    <div class="item-price">4</div>
+                </div>
+                <div class="menu-item">
+                    <div class="item-info">
+                        <div class="item-header">
+                            <span class="item-name">Fresh Orange Juice</span>
+                            <div class="dotted-line"></div>
+                        </div>
+                    </div>
+                    <div class="item-price">6</div>
+                </div>
+                <div class="menu-item">
+                    <div class="item-info">
+                        <div class="item-header">
+                            <span class="item-name">Fresh Apple Juice</span>
+                            <div class="dotted-line"></div>
+                        </div>
+                    </div>
+                    <div class="item-price">6</div>
+                </div>
+                <div class="menu-item">
+                    <div class="item-info">
+                        <div class="item-header">
+                            <span class="item-name">Italian Lemonade</span>
+                            <div class="dotted-line"></div>
+                        </div>
+                    </div>
+                    <div class="item-price">5</div>
+                </div>
+            </div> 
+            
+            <!-- section drinks 2 (alcoholic) -->
+            <div class="menu-column">
+                <div class="menu-item">
+                    <div class="item-info">
+                        <div class="item-header">
+                            <span class="item-name">Prosecco Superiore DOCG</span>
+                            <div class="dotted-line"></div>
+                        </div>
+                    </div>
+                    <div class="item-price">8</div>
+                </div>
+                <div class="menu-item">
+                    <div class="item-info">
+                        <div class="item-header">
+                            <span class="item-name">Chianti Classico</span>
+                            <div class="dotted-line"></div>
+                        </div>
+                    </div>
+                    <div class="item-price">9</div>
+                </div>
+                <div class="menu-item">
+                    <div class="item-info">
+                        <div class="item-header">
+                            <span class="item-name">Barolo DOCG</span>
+                            <div class="dotted-line"></div>
+                        </div>
+                    </div>
+                    <div class="item-price">14</div>
+                </div>
+                <div class="menu-item">
+                    <div class="item-info">
+                        <div class="item-header">
+                            <span class="item-name">Pinot Grigio</span>
+                            <div class="dotted-line"></div>
+                        </div>
+                    </div>
+                    <div class="item-price">8</div>
+                </div>
+                <div class="menu-item">
+                    <div class="item-info">
+                        <div class="item-header">
+                            <span class="item-name">Negroni Classico</span>
+                            <div class="dotted-line"></div>
+                        </div>
+                    </div>
+                    <div class="item-price">12</div>
+                </div>
+                <div class="menu-item">
+                    <div class="item-info">
+                        <div class="item-header">
+                            <span class="item-name">Aperol Spritz</span>
+                            <div class="dotted-line"></div>
+                        </div>
+                    </div>
+                    <div class="item-price">10</div>
+                </div>
+                <div class="menu-item">
+                    <div class="item-info">
+                        <div class="item-header">
+                            <span class="item-name">Bellini</span>
+                            <div class="dotted-line"></div>
+                        </div>
+                    </div>
+                    <div class="item-price">11</div>
+                </div>
+                <div class="menu-item">
+                    <div class="item-info">
+                        <div class="item-header">
+                            <span class="item-name">Campari Soda</span>
+                            <div class="dotted-line"></div>
+                        </div>
+                    </div>
+                    <div class="item-price">8</div>
+                </div>
+                <div class="menu-item">
+                    <div class="item-info">
+                        <div class="item-header">
+                            <span class="item-name">Italian Craft Beer</span>
+                            <div class="dotted-line"></div>
+                        </div>
+                    </div>
+                    <div class="item-price">7</div>
+                </div>
+            </div>
+            <div class="ywline2"></div>
+            <!-- add more sections here -->
+        </div>
+        <!-- footer -->
+        <footer>
+            <div class="fo-con">
+                <div class="fo-con1">
+                    <div class="fo-con1-1">
+                        <p>Oro d Italia Restaurante</p>
+                        <p>Coolsingel 133, Rotterdam 3038JK
+                            Tel: 010-4263666
+                            Info@oroditalia.nl</p>
+                    </div>
+                    <div class="fo-con1-2">
+                        <img src="/img/output-onlinepngtools.png" width="300px"
+                            alt>
+                        <p>Openingstijden</p>
+                    </div>
+                    <div class="fo-con1-3">
+                        <div class="opening-hours">
+                            <span class="day">Maandag</span>
+                            <div class="line"></div>
+                            <span class="time">12:00-23:30</span>
+
+                            <span class="day">Dinsdag</span>
+                            <div class="line"></div>
+                            <span class="time">12:00-23:30</span>
+
+                            <span class="day">Woensdag</span>
+                            <div class="line"></div>
+                            <span class="time">12:00-23:30</span>
+
+                            <span class="day">Donderdag</span>
+                            <div class="line"></div>
+                            <span class="time">12:00-23:30</span>
+
+                            <span class="day">Vrijdag</span>
+                            <div class="line"></div>
+                            <span class="time">12:00-23:30</span>
+
+                            <span class="day">Zaterdag</span>
+                            <div class="line"></div>
+                            <span class="time">12:00-23:30</span>
+
+                            <span class="day">Zondag</span>
+                            <div class="line"></div>
+                            <span class="time">12:00-23:30</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="fo-con2">
+                    <div class="fo-con2-1">
+                        <a href="/">Home</a>
+                    <a href="menu.html">Menu</a>
+                    <a href="javascript:void(0)" onclick="openReserveren()">Reserveren</a>
+                    </div>
+                    <a href class="fo-con2-2">
+                        <img src="/img/smartphone.svg" alt="smartphone svg"
+                            width="20px">
+                        <p>Bel Ons</p>
+                    </a>
+                    <div class="fo-con2-3">
+                        <img src="/img/instagram (2) 1.svg" alt="instagram svg">
+                        <img src="/img/facebook (5) 1.svg" alt="facebook svg">
+                        <img src="/img/linkedin (2) 1.svg" alt="linkedin svg">
+                    </div>
+                    <div class="fo-con2-4">
+                        <h2>Contact</h2>
+                        <form class="contact-form">
+                            <input type="text" placeholder="Naam" required>
+                            <input type="email" placeholder="Email"
+                                required>
+                            <textarea placeholder="Schrijf hier uw bericht"
+                                required></textarea>
+                            <button type="submit">Verstuur</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                © 2024 Oro d'Italia. All rights reserved.
+                <div class="made-by">Made by <a href="https://arnedo-digital.nl"
+                        target="_blank">Arnedo Digital</a></div>
+            </div>
+        </footer>
+        <script src="script.js"></script>
+    </body>
+</html>
