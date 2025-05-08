@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="nl">
+    <head>
+        <meta property="og:type" content="restaurant.restaurant">
+        <meta property="og:locale" content="nl_NL">
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:image:alt"
+            content="Oro d'Italia Restaurant Rotterdam">
+        <meta name="description"
+            content="Authentiek Italiaans restaurant in hartje Rotterdam. Geniet van verse pasta's, pizza's, grillgerechten en een uitgebreide wijnkaart. Reserveer nu.">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Oro d Italia</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Allura&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+            rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <!-- Overlay pagecovering reservation part -->
+        <div class="overlay-container">
+            <div class="inner-container">
+                <img onclick="closeReserveren()" class="close"
+                    src="img/close.svg" alt>
+                <h1>Reservation</h1>
+                <form class="res-form">
+                    <label for><strong>Number of people</strong> -
+                        Optional</label>
+                    <input placeholder="Number of people" type="number">
+                    <label for><strong>Date</strong> - required</label>
+                    <input type="date">
+                    <label for><strong>Number of people</strong> -
+                        required</label>
+                    <input type="time">
+                    <button class='res-btn'>FIND A TABLE</button>
+                </form>
+            </div>
+        </div>
+        <!-- mobile nav -->
+        <div class="nav-mob-overlay-container">
+            <div class="mob-nav-container">
+                <a href="/">Home</a>
+                <a href="menu.html">Menu</a>
+                <a onclick="openReserveren()">Reserveren</a>
+            </div>
+        </div>
+        <div class="header">
+            <!-- nav desktop -->
+            <nav>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a onclick="openReserveren()">Reserveren</a></li>
+                    <li><a href="tel:0104263666">Bel (010) 4263666</a></li>
+                </ul>
+                <img onclick="showMobNav()" class="hamburger-icon"
+                    id="hamburger" src="img/menu (2).svg"
+                    alt="hamburger menu button">
+            </nav>
+            <h1 class="home1">Oro d Italia</h1>
+            <h3 class="home2">RESTAURANTE</h3>
+            <h3 class="home3">COOLSINGEL 133</h3>
+            <h3 class="home3">ROTTERDAM 3011HV</h3>
+        </div>
+        <!-- de menu button en the revervation button onderaan fixed -->
+        <div class="fix">
+            <a class="fix1" href="menu.html">
+                <img src="/img/menu.svg" alt>
+                <p>Menu</p>
+            </a>
+            <a class="fix2" onclick="openReserveren()">
+                <img src="/img/open-book.svg" alt>
+                <p>Reservering</p>
+            </a>
+        </div>
+        <div class="ons">
+            <div class="ons1">
+                <div class="ons1-1">
+                    <h2>Over ons</h2>
+                    <h3>TRADITIONELE ITALIAANSE SMAKEN...</h3>
+                    <p><img src="/img/Arrow 1.svg" alt></p>
+                </div>
+                <div class="ons1-2">
+                    <p>Oro d Italia</p>
+                    <p>Authentiek Italiaans restaurant in hartje Rotterdam met
+                        een uitgebreide wijnkaart en heerlijke gerechten - van
+                        huisgemaakte pasta tot verse vis, kreeft en vegetarische
+                        opties. Geniet van onze </p>
+                    <p>sfeervolle buitenterras of kies voor ons stijlvolle
+                        restaurant met ruime bar en privétuin. Een culinaire
+                        ervaring die u niet mag missen!</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section1">
+                <img src="/img/foto-eten1.jpg" alt="italiaans eten voorgerecht">
+            </div>
+            <div class="section2">
+                <h2>Voorgerechten</h2>
+                <p>Onze antipasti worden bereid met zorgvuldig geselecteerde
+                    ingrediënten uit heel Italië. Van huisgemaakte burrata met
+                    zongerijpte tomaten tot dungesneden prosciutto di Parma en
+                    verse carpaccio met truffel. </p>
+                <p>We serveren ook klassieke bruschetta's, vitello tonnato en
+                    een wisselende selectie van gegrilde seizoensgroenten,
+                    perfect om te delen of als start van uw avond.</p>
+                <a href="menu.html" class="btn">MENU</a>
+            </div>
+        </div>
+        <div class="section">
+            <div class="section2">
+                <h2>Pizza's</h2>
+                <p>Onze ervaren pizzaioli kneden dagelijks vers deeg voor
+                    authentieke Italiaanse pizza's, belegd met seizoensgebonden
+                    en traditionele ingrediënten. Ons creatieve pizzamenu
+                    wisselt regelmatig. </p>
+                <p>Een klassieke margherita blijft tijdloos perfect, maar ontdek
+                    ook onze quattro formaggi, zwarte truffel of pittige diavola
+                    voor een bijzondere smaakervaring. Natuurlijk serveren we
+                    ook glutenvrije en lactosevrije opties.</p>
+                <a href="menu.html" class="btn">MENU</a>
+            </div>
+            <div class="section1">
+                <img src="/img/foto-eten2.jpg" alt="italiaans eten voorgerecht">
+            </div>
+        </div>
+        <div class="section">
+            <div class="section1">
+                <img src="/img/meat4.webp" alt="italiaans eten voorgerecht">
+            </div>
+            <div class="section2">
+                <h2>Grill</h2>
+                <p>Onze houtskoolgrill geeft een unieke, rokerige smaak aan onze
+                    gerechten. Van malse bistecca alla fiorentina tot verse vis
+                    van de dag - elk gerecht wordt bereid met de beste
+                    ingrediënten en Italiaanse kruiden. </p>
+                <p>Het speciaal geselecteerde hout en de expertise van onze
+                    grillmeesters zorgen voor die authentieke smaak waar de
+                    Italiaanse grillkeuken om bekend staat. De traditionele
+                    smaken van Italië proeft u hier op zijn best.</p>
+                <a href="menu.html" class="btn">MENU</a>
+            </div>
+        </div>
+        <div class="section">
+            <div class="section2">
+                <h2>Pastas</h2>
+                <p>De essentie van de Italiaanse keuken komt tot leven in onze
+                    verse pasta, die we met trots voor uw ogen bereiden. Neem
+                    een portie mee naar huis met een pot van onze huisgemaakte
+                    sauzen, of geniet direct bij ons van een traditionele
+                    pastaschotel.</p>
+                <p>Van klassieke recepten tot seizoensspecialiteiten, onze
+                    gerechten worden verrijkt met ingrediënten als 24 maanden
+                    gerijpte Parmigiano Reggiano, kalfsragù alla Bolognese,
+                    porcini paddenstoelen en de exclusieve witte truffel.</p>
+                <a href="menu.html" class="btn">MENU</a>
+            </div>
+            <div class="section1">
+                <img src="/img/bord-pasta.jpg" alt="italiaans eten voorgerecht">
+            </div>
+        </div>
+        <div class="section">
+            <div class="section1">
+                <img src="/img/nagerecht.jpg" alt="italiaans eten voorgerecht">
+            </div>
+            <div class="section2">
+                <h2>Nagerechten</h2>
+                <p>Van onze huisgemaakte tiramisu tot traditionele cannoli -
+                    onze desserts zijn een perfecte afsluiting van uw maaltijd.
+                    Met verse ingrediënten zoals Italiaanse mascarpone,
+                    Siciliaanse pistachenoten en seizoensfruit bereiden onze
+                    patissiers dagelijks deze zoete klassiekers. </p>
+                <p>Probeer ook onze handgemaakte gelato, in smaken die wisselen
+                    met het seizoen.</p>
+                <a href="menu.html" class="btn">MENU</a>
+            
+            </div>
+        </div>
+        <footer>
+            <div class="fo-con">
+                <div class="fo-con1">
+                    <div class="fo-con1-1">
+                        <p>Oro d Italia Restaurante</p>
+                        <p>Coolsingel 133, Rotterdam 3038JK
+                            Tel: 010-4263666
+                            Info@oroditalia.nl</p>
+                    </div>
+                    <div class="fo-con1-2">
+                        <img src="/img/output-onlinepngtools.png" width="300px"
+                            alt>
+                        <p>Openingstijden</p>
+                    </div>
+                    <div class="fo-con1-3">
+                        <div class="opening-hours">
+                            <span class="day">Maandag</span>
+                            <div class="line"></div>
+                            <span class="time">12:00-23:30</span>
+
+                            <span class="day">Dinsdag</span>
+                            <div class="line"></div>
+                            <span class="time">12:00-23:30</span>
+
+                            <span class="day">Woensdag</span>
+                            <div class="line"></div>
+                            <span class="time">12:00-23:30</span>
+
+                            <span class="day">Donderdag</span>
+                            <div class="line"></div>
+                            <span class="time">12:00-23:30</span>
+
+                            <span class="day">Vrijdag</span>
+                            <div class="line"></div>
+                            <span class="time">12:00-23:30</span>
+
+                            <span class="day">Zaterdag</span>
+                            <div class="line"></div>
+                            <span class="time">12:00-23:30</span>
+
+                            <span class="day">Zondag</span>
+                            <div class="line"></div>
+                            <span class="time">12:00-23:30</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="fo-con2">
+                    <div class="fo-con2-1">
+                        <a href="/">Home</a>
+                        <a href="menu.html">Menu</a>
+                        <a href="javascript:void(0)"
+                            onclick="openReserveren()">Reserveren</a>
+                    </div>
+                    <a href class="fo-con2-2">
+                        <img src="/img/smartphone.svg" alt="smartphone svg"
+                            width="20px">
+                        <p>Bel Ons</p>
+                    </a>
+                    <div class="fo-con2-3">
+                        <img src="/img/instagram (2) 1.svg" alt="instagram svg">
+                        <img src="/img/facebook (5) 1.svg" alt="facebook svg">
+                        <img src="/img/linkedin (2) 1.svg" alt="linkedin svg">
+                    </div>
+                    <div class="fo-con2-4">
+                        <h2>Contact</h2>
+                        <form class="contact-form">
+                            <input type="text" placeholder="Naam" required>
+                            <input type="email" placeholder="Email" required>
+                            <textarea placeholder="Schrijf hier uw bericht"
+                                required></textarea>
+                            <button type="submit">Verstuur</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                © 2024 Oro d'Italia. All rights reserved.
+                <div class="made-by">Made by <a href="https://arnedo-digital.nl"
+                        target="_blank">Arnedo Digital</a></div>
+            </div>
+        </footer>
+        <script src="script.js"></script>
+    </body>
+</html>
