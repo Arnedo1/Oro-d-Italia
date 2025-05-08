@@ -641,10 +641,9 @@ footer {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    width: 49%;
 }
 .contact-form input {
-    width: 100%;
+    width: 49%;
     padding:15px;
     background-color: #F1EEEE;
     color: #ffffff;
