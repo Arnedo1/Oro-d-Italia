@@ -117,7 +117,7 @@ a {
     background-size: cover;
     background-position: center;
     object-fit: cover;
-    height: 100vh;
+    height: 100vhd;
     text-align: center;
     z-index: 1;
 }
