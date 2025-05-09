@@ -146,7 +146,7 @@ header {
     background-position: center;
     background-repeat: no-repeat;
     object-fit: cover;
-    height: 325px;
+    height: 525px;
     text-align: center;
     z-index: 1;
 }
@@ -864,7 +864,7 @@ footer {
 
 @media only screen and (max-width: 768px) {
     header {
-        height: 600px;
+        height: 400px;
     }
     .fix {
         flex-direction: column; 
