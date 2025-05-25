@@ -862,7 +862,7 @@ footer {
 
 @media only screen and (max-width: 768px) {
     header {
-        height: 600px;
+        height: 400px;
     }
     .fix {
         flex-direction: column; 
