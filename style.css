@@ -113,7 +113,7 @@ a {
 
 }
 .header {
-    background-image: url(./img/hoofd-foto.jpg);
+    background-image: url(/img/hoofd-foto.jpg);
     background-size: cover;
     background-position: center;
     object-fit: cover;
@@ -141,7 +141,7 @@ a {
 }
 
 header {
-    background-image: url(./img/restaurant5.jpg);
+    background-image: url(/img/restaurant5.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
