@@ -87,7 +87,7 @@ a {
 .res-form input {
     height: 50px;
     width: 100%;
-    box-sizing: border-box;
+    box-sizing: border-box; /* This is the key fix */
     padding: 0 10px;
 }
 
@@ -664,9 +664,9 @@ footer {
     border: none;
     border-radius: 3px;
     background: linear-gradient(to top, 
-    rgba(219, 194, 140, 0.75),
-    rgba(140, 123, 88, 0.80),
-    rgba(96, 86, 57, 1)
+    rgba(219, 194, 140, 0.75),  /* #DBC28C with 75% opacity */
+    rgba(140, 123, 88, 0.80),   /* #8C7B58 with 80% opacity */
+    rgba(96, 86, 57, 1)         /* #605639 with 100% opacity */
 );
     color: #ffffff;
     font-weight: 300;
@@ -820,6 +820,7 @@ footer {
         margin: 20px auto;
     }
     
+    /* Fix the order of elements */
     .section {
         display: flex;
         flex-direction: column;
@@ -828,13 +829,16 @@ footer {
         margin-top: 5px;
         margin-bottom: 30px;
     }
+    /* Make all sections have the same order: text first, image last */
     .section .section1 {
-        order: 2;
+        order: 2; /* Image always comes last */
     }
     
     .section .section2 {
-        order: 1;
+        order: 1; /* Text content always comes first */
     }
+    
+    /* The sections that originally had image on right already have correct order */
     
     .ons {
         flex-direction: column;
@@ -929,33 +933,40 @@ footer {
     }
 }
 
+/* Main spacing fixes for screens below 560px */
 @media screen and (max-width: 560px) {
+    /* Fix for section spacing */
     .section {
         padding: 15px 0;
         margin-bottom: 0;
     }
     
+    /* Fix image display in section1 */
     .section1 img {
         max-width: 100%;
         height: auto;
         width: auto !important;
         object-fit: contain;
-        margin: 0;
+        margin: 0; /* Remove the extreme negative margins */
     }
     
+    /* Adjust section1 and section2 heights and margins */
     .section1, .section2 {
         height: auto;
         margin: 10px auto;
     }
     
+    /* Make h2 headings more compact */
     .section2 h2 {
         margin: 0 0 10px 0;
     }
     
+    /* Make paragraphs more compact */
     .section2 p {
         margin-bottom: 10px;
     }
     
+    /* About us section fix */
     .ons {
         padding: 30px 0;
         height: auto;
@@ -970,7 +981,7 @@ footer {
         margin: 10px auto;
     }
     
-   
+    /* Fix for "Over ons" heading and subtitle */
     .ons1-1 h2 {
         margin-bottom: 5px;
     }
@@ -999,17 +1010,17 @@ footer {
         margin-bottom: 150px;
     }
 
-   
+    /* Further reduce section padding */
     .section {
         padding: 10px 0;
     }
     
-    
+    /* Reduce bottom margin on the header */
     h3.home3 {
         margin-bottom: 10px;
     }
     
-  
+    /* Make buttons more compact */
     .btn {
         margin-top: 5px;
         padding: 6px 30px;
@@ -1046,7 +1057,7 @@ footer {
         margin-bottom: -10px;
     }
     .section-title1 {
-        margin-top: 0; 
+        margin-top: 0; /* Adjusted from -20px */
     }
     .fo-con2, .fo-con1{
         min-width: 300px;
@@ -1064,49 +1075,6 @@ footer {
         margin-bottom: 50px;
     }
     #toShare {
-        margin-bottom: 0;
+        margin-bottom: 0; /* Adjusted from -15px */
     }
-}
-
-:root {
-    color-scheme: light;
-}
-
-input, select, textarea, button {
-    color-scheme: light;
-    -webkit-appearance: none;
-    appearance: none;
-}
-
-img {
-    filter: none !important;
-}
-
-body, html {
-    background-color: white !important;
-    color: black !important;
-}
-
-.header {
-    background-color: transparent !important;
-}
-
-.ons {
-    background-color: #F4F3E9 !important;
-}
-
-.menu1 {
-    background-color: #F4F3E9 !important;
-}
-
-footer {
-    background-color: #474747 !important;
-}
-
-.fo-con1, .fo-con2 {
-    background-color: #474747 !important;
-}
-
-.fo-con2-4 {
-    background-color: #414141 !important;
 }
