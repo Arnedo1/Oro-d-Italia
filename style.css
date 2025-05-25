@@ -630,12 +630,7 @@ footer {
     font-family: roboto;
     font-size: 16px;
     margin-bottom: 10px;
-    height: 200px;
-}
-
-.contact-form textarea {
     height: 160px;
-    resize: none;
 }
 .contact-form {
     display: flex;
