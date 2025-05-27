@@ -267,7 +267,7 @@ h3.home2 {
     font-family: 'Noto serif','Times New Roman', Times, serif;
     font-size: 40px;
     margin-top: -85px;
-    margin-bottom: 200px;
+    margin-bottom: 160px;
     font-weight: normal;
 }
 
@@ -619,18 +619,19 @@ footer {
     font-weight: 400;
     font-family: "Open Sans", sans-serif;
     margin-left: 5px;
+    margin-bottom: -10px;
   
 }
 .contact-form textarea {
     width: 100%;
     padding: 15px;
     background-color: #F1EEEE;
-    color: #ffffff;
+    color: #484848;
     border-radius: 10px;
     font-family: roboto;
     font-size: 16px;
     margin-bottom: 10px;
-    height: 100px;
+    height: 160px;
 }
 .contact-form {
     display: flex;
@@ -640,10 +641,10 @@ footer {
 
 }
 .contact-form input {
-   width: 100%;
+   width: 48%;
     padding:15px;
     background-color: #F1EEEE;
-    color: #ffffff;
+    color: #4d4d4d;
     border-radius: 10px;
     font-family: roboto;
     font-size: 16px;
