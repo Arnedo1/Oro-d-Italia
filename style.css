@@ -553,7 +553,7 @@ footer {
 
 .copyright {
     position: absolute;
-    bottom: 50px;
+    bottom: 60px;
     left: 50%;
     transform: translateX(-50%);
     color: #c4ad7a;
@@ -922,6 +922,13 @@ footer {
     .section-title {
         margin-top: 0px;
     }
+    footer {
+        padding-bottom: 200px;
+    }
+    .copyright {
+        bottom: 120px;
+    }
+
 }
 
 @media screen and (max-width: 560px) {
